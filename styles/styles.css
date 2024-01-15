@@ -26,7 +26,7 @@
 }
 
 .description-text {
-  color: #fff;
+  color: rgba(19, 19, 24, 0.7);
   font-size: 1rem;
   font-weight: 400;
 }
@@ -41,6 +41,12 @@
   border: none;
   width: 174px;
   height: 52px;
+}
+
+.section-header {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
 /* header styles */
@@ -103,6 +109,7 @@ nav .icon-hidden {
 
 .banner-text {
   padding: 24px 247px 48px;
+  color: #fff;
 }
 
 .header-inputs {
@@ -146,6 +153,25 @@ main {
   margin: 52px auto;
   max-width: 80%;
 }
+
+/* popular section */
+.popular-container{
+    display: flex;
+    gap: 100px;
+    
+}
+
+.popular-content > *{
+    margin-top: 30px;
+}
+
+.popular-container-list ul > *{
+    margin-top: 20px;
+}
+
+.popular-container-list{
+    margin-left: 40px;
+}
 /* respossive for small device */
 
 @media screen and (max-width: 567px) {
@@ -164,9 +190,16 @@ main {
     font-size: 0.875rem;
   }
 
-  .header-inputs {
+  .header-inputs 
+  {
     flex-direction: column;
     margin: 0 50px;
     padding: 15px;
+  }
+  .popular-container{
+    flex-direction: column;
+  }
+  .popular-img{
+    width: 100%;
   }
 }
