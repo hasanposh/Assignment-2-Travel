@@ -1,0 +1,172 @@
+/* mulish fonts from google */
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900;1000&display=swap");
+
+/* shared styles */
+* {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-name {
+  color: #131318;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.logo-name-orange {
+  color: #ff5400;
+}
+
+.description-text {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.btn-primary {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  background: #ff5400;
+  border: none;
+  width: 174px;
+  height: 52px;
+}
+
+/* header styles */
+
+/* header nav styles */
+header {
+  margin: 52px auto;
+  max-width: 80%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #424247;
+}
+
+nav .icon-hidden {
+  display: none;
+}
+/* header banner styles */
+
+.header-banner {
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url(../Images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  text-align: center;
+  margin-top: 50px;
+  height: 500px;
+}
+
+.header-banner-title {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
+  padding-top: 106px;
+}
+
+.banner-text {
+  padding: 24px 247px 48px;
+}
+
+.header-inputs {
+  display: flex;
+  gap: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 16px;
+  margin: 0 360px;
+  justify-content: center;
+}
+
+input {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  border: none;
+}
+
+input::placeholder {
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+select {
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 8px;
+  width: 174px;
+  height: 52px;
+  padding: 10px;
+  border: none;
+}
+
+/* main section styles */
+
+main {
+  margin: 52px auto;
+  max-width: 80%;
+}
+/* respossive for small device */
+
+@media screen and (max-width: 567px) {
+  nav .list-hidden {
+    display: none;
+  }
+  .header-banner {
+    padding: 0;
+  }
+  .header-banner-title {
+    font-size: 1.375rem;
+    padding-top: 20px;
+  }
+  .banner-text {
+    padding: 10px;
+    font-size: 0.875rem;
+  }
+
+  .header-inputs {
+    flex-direction: column;
+    margin: 0 50px;
+    padding: 15px;
+  }
+}
