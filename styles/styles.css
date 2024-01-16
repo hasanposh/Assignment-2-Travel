@@ -333,8 +333,8 @@ main {
   padding: 30px;
 }
 
-.new-section img{
-    border-radius: 16px;
+.new-section img {
+  border-radius: 16px;
 }
 
 /* subscription section styles */
@@ -445,6 +445,9 @@ footer hr {
 /* respossive for small device */
 
 @media screen and (max-width: 567px) {
+  .logo-name {
+    font-size: 2rem;
+  }
   nav ul > li {
     display: none;
   }
@@ -552,16 +555,20 @@ footer hr {
     grid-row: 3 / span 1;
   }
 
-  .new-section{
+  .new-section {
+    width: 100%;
     padding: 15px;
   }
-.new-section .section-header{
+  .new-section-card {
+    width: 78%;
+  }
+  .new-section .section-header {
     font-size: 1.5rem;
-}
+  }
 
-.new-section .branch-name{
+  .new-section .branch-name {
     font-size: 1.25rem;
-}
+  }
 
   .sub-content input,
   .sub-container button {
