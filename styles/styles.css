@@ -41,6 +41,7 @@
   border: none;
   width: 174px;
   height: 52px;
+  cursor: pointer;
 }
 
 .section-header {
@@ -49,6 +50,48 @@
   font-weight: 800;
 }
 
+.card-name {
+  /* color: #fff; */
+  color: #131318;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin: 50%;
+}
+
+.description-card-design {
+  border-radius: 16px;
+  border: 1px solid red;
+  
+}
+
+
+/* footer styles */
+
+footer{
+    height: 500px;
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+}
+
+.footer-logo{
+    justify-content: center;
+    padding-top: 110px;
+}
+.footer-text{
+    margin: 15px 350px 30px;
+}
+
+.footer-icons i{
+    margin-top: 100px;
+    margin-right: 15px;
+    font-size: 2rem;
+    margin-bottom: 100px;
+  }
+
+  footer hr{
+    margin: 50px 300px;
+  }
 /* header styles */
 
 /* header nav styles */
@@ -155,23 +198,40 @@ main {
 }
 
 /* popular section */
-.popular-container{
+.popular-container {
+  display: flex;
+  gap: 100px;
+}
+
+.popular-content > * {
+  margin-top: 30px;
+}
+
+.popular-container-list ul > * {
+  margin-top: 20px;
+}
+
+.popular-container-list {
+  margin-left: 40px;
+}
+
+.row1 , .row2 , .row3{
     display: flex;
-    gap: 100px;
-    
+    height: 300px;
 }
 
-.popular-content > *{
-    margin-top: 30px;
+.description-card1 {
+    background-image: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url(../Images/maldives.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
 }
 
-.popular-container-list ul > *{
-    margin-top: 20px;
-}
-
-.popular-container-list{
-    margin-left: 40px;
-}
 /* respossive for small device */
 
 @media screen and (max-width: 567px) {
@@ -190,16 +250,24 @@ main {
     font-size: 0.875rem;
   }
 
-  .header-inputs 
-  {
+  .header-inputs {
     flex-direction: column;
     margin: 0 50px;
     padding: 15px;
   }
-  .popular-container{
+  .popular-container {
     flex-direction: column;
   }
-  .popular-img{
+  .popular-img {
     width: 100%;
+  }
+  .footer-logo{
+    padding-top: 50px;
+  }
+  .footer-text{
+    margin: 30px;
+  }
+  footer hr{
+    margin: 30px 10%;
   }
 }
